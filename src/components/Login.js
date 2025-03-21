@@ -20,7 +20,7 @@ const Login = ({ onLogin }) => {
     }, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [quotes.length]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

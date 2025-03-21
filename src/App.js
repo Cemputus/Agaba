@@ -31,7 +31,7 @@ function App() {
     if (darkMode) {
       document.body.classList.add('dark-mode');
     }
-  }, []);
+  }, [darkMode]);
 
   const handleLogin = () => {
     setIsAuthenticated(true);
