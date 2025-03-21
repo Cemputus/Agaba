@@ -12,26 +12,29 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   
+  // Initialize dark mode and auth state on mount
   useEffect(() => {
     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
     const savedAuth = localStorage.getItem('isAuthenticated') === 'true';
     setDarkMode(savedDarkMode);
     setIsAuthenticated(savedAuth);
+    
+    // Apply dark mode class immediately on mount
+    if (savedDarkMode) {
+      document.body.classList.add('dark-mode');
+    }
   }, []);
 
   const darkmodeFunc = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     localStorage.setItem('darkMode', newDarkMode);
-    document.body.classList.toggle('dark-mode');
-  };
-
-  // Initialize dark mode on mount
-  useEffect(() => {
-    if (darkMode) {
+    if (newDarkMode) {
       document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
     }
-  }, [darkMode]);
+  };
 
   const handleLogin = () => {
     setIsAuthenticated(true);
@@ -176,15 +179,15 @@ function App() {
                       <div className="contact-details">
                         <div className="contact-item">
                           <span className="icon">📧</span>
-                          <a href="mailto:itungoagaba@gmail.com">itungoagaba@gmail.com</a>
+                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Email</a>
                         </div>
                         <div className="contact-item">
                           <span className="icon">📞</span>
-                          <a href="tel:+256-775-511-961">+256-775-511-961</a>
+                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Phone</a>
                         </div>
                         <div className="contact-item">
                           <span className="icon">📍</span>
-                          <p>Kampala, Uganda</p>
+                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Location</a>
                         </div>
                       </div>
                     </div>
@@ -192,7 +195,7 @@ function App() {
                     <div className="social-links">
                       <h3>Connect With Me</h3>
                       <div className="social-grid">
-                        <a href="https://x.com/AgabaMugisha1" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">𝕏</span>
                           <span>Twitter</span>
                         </a>
@@ -200,7 +203,7 @@ function App() {
                           <span className="icon">📚</span>
                           <span>GitHub</span>
                         </a>
-                        <a href="https://linkedin.com/in/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">💼</span>
                           <span>LinkedIn</span>
                         </a>
