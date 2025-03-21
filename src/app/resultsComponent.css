@@ -1,0 +1,127 @@
+.results-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academic-results, .projects-section {
+  margin-bottom: 3rem;
+}
+
+.semester-results {
+  margin-bottom: 2rem;
+}
+
+.results-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.course-card, .project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover, .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h4 {
+  margin: 0 0 1rem;
+  color: #333;
+}
+
+.grade-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grade {
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.grade.a { background: #e6f4ea; color: #1e7e34; }
+.grade.a- { background: #e6f4ea; color: #1e7e34; }
+.grade.b+ { background: #fff3cd; color: #856404; }
+.grade.b { background: #fff3cd; color: #856404; }
+.grade.b- { background: #fff3cd; color: #856404; }
+
+.score {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-card h3 {
+  margin: 0 0 1rem;
+  color: #333;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background: #f0f0f0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #1a2a6c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #b21f1f;
+}
+
+/* Dark mode styles */
+.dark-mode .course-card,
+.dark-mode .project-card {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+.dark-mode .course-card h4,
+.dark-mode .project-card h3 {
+  color: #fff;
+}
+
+.dark-mode .score {
+  color: #ccc;
+}
+
+.dark-mode .tech-tag {
+  background: #3d3d3d;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .results-container {
+    padding: 1rem;
+  }
+
+  .results-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+} 
