@@ -115,20 +115,32 @@ function App() {
                         <span>CSS3</span>
                         <span>JavaScript</span>
                       </div>
-                      <a href="https://github.com/Agabaa/my-portfolio" target="_blank" rel="noopener noreferrer" className="project-link">
-                        View Project
+                      <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="project-link">
+                        View Projects
                       </a>
                     </div>
                     <div className="project-card">
-                      <h3>Swimming Tips App</h3>
-                      <p>Interactive swimming tutorial platform</p>
+                      <h3>Data Structures</h3>
+                      <p>Data structures and algorithms implementations</p>
                       <div className="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
+                        <span>Python</span>
+                        <span>Jupyter Notebook</span>
+                        <span>Algorithms</span>
                       </div>
-                      <a href="https://github.com/Agabaa/swimming-tips-app" target="_blank" rel="noopener noreferrer" className="project-link">
-                        View Project
+                      <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="project-link">
+                        View Projects
+                      </a>
+                    </div>
+                    <div className="project-card">
+                      <h3>C Programming</h3>
+                      <p>C programming course projects and exercises</p>
+                      <div className="tech-stack">
+                        <span>C</span>
+                        <span>Programming</span>
+                        <span>Algorithms</span>
+                      </div>
+                      <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="project-link">
+                        View Projects
                       </a>
                     </div>
                   </div>

@@ -119,27 +119,71 @@ a:hover {
   text-decoration: underline;
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.project-grid {
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
-.portfolio-item {
-  background: var(--background-color);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: var(--transition);
+.project-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.dark-mode .portfolio-item {
-  background: #2d2d2d;
-}
-
-.portfolio-item:hover {
+.project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-card .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card .tech-stack span {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.project-card .project-link {
+  display: inline-block;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-top: auto;
+}
+
+.project-card .project-link:hover {
+  color: var(--accent-hover);
 }
 
 .contact-section {
@@ -246,8 +290,8 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+  .project-grid {
+    flex-direction: column;
   }
 }
 
