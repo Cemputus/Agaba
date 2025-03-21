@@ -179,15 +179,15 @@ function App() {
                       <div className="contact-details">
                         <div className="contact-item">
                           <span className="icon">📧</span>
-                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Email</a>
+                          <a href="mailto:itungoagaba@gmail.com">itungoagaba@gmail.com</a>
                         </div>
                         <div className="contact-item">
                           <span className="icon">📞</span>
-                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Phone</a>
+                          <a href="tel:+256-775-511-961">+256-775-511-961</a>
                         </div>
                         <div className="contact-item">
                           <span className="icon">📍</span>
-                          <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer">Location</a>
+                          <p>Kampala, Uganda</p>
                         </div>
                       </div>
                     </div>
@@ -195,7 +195,7 @@ function App() {
                     <div className="social-links">
                       <h3>Connect With Me</h3>
                       <div className="social-grid">
-                        <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://x.com/AgabaMugisha1" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">𝕏</span>
                           <span>Twitter</span>
                         </a>
@@ -203,7 +203,7 @@ function App() {
                           <span className="icon">📚</span>
                           <span>GitHub</span>
                         </a>
-                        <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://linkedin.com/in/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">💼</span>
                           <span>LinkedIn</span>
                         </a>
