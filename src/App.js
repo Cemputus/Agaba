@@ -115,6 +115,9 @@ function App() {
                         <span>CSS3</span>
                         <span>JavaScript</span>
                       </div>
+                      <a href="https://github.com/Agabaa/my-portfolio" target="_blank" rel="noopener noreferrer" className="project-link">
+                        View Project
+                      </a>
                     </div>
                     <div className="project-card">
                       <h3>Swimming Tips App</h3>
@@ -124,6 +127,9 @@ function App() {
                         <span>Node.js</span>
                         <span>MongoDB</span>
                       </div>
+                      <a href="https://github.com/Agabaa/swimming-tips-app" target="_blank" rel="noopener noreferrer" className="project-link">
+                        View Project
+                      </a>
                     </div>
                   </div>
                 </section>
@@ -178,11 +184,11 @@ function App() {
                           <span className="icon">𝕏</span>
                           <span>Twitter</span>
                         </a>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://github.com/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">📚</span>
                           <span>GitHub</span>
                         </a>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <a href="https://linkedin.com/in/Agabaa" target="_blank" rel="noopener noreferrer" className="social-link">
                           <span className="icon">💼</span>
                           <span>LinkedIn</span>
                         </a>
