@@ -27,19 +27,19 @@ const ResultsComponent = () => {
       title: "Portfolio Website",
       description: "A responsive portfolio website built with React and modern CSS",
       technologies: ["React", "CSS3", "JavaScript", "React Router"],
-      link: "https://github.com/yourusername/portfolio"
+      link: "https://github.com/Agabaa"
     },
     {
       title: "Swimming Tips App",
       description: "Interactive platform for swimming tutorials and tips",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://github.com/yourusername/swimming-app"
+      link: "https://github.com/Agabaa"
     },
     {
       title: "Student Management System",
       description: "Web-based system for managing student records and grades",
       technologies: ["React", "Python", "Django", "PostgreSQL"],
-      link: "https://github.com/yourusername/student-management"
+      link: "https://github.com/Agabaa"
     }
   ];
 
