@@ -82,6 +82,20 @@ const GeneralComponents = () => {
                   <li>B20715</li>
                 </ul>
               </div>
+              <div className="video-section">
+                <h3>My Introduction Video</h3>
+                <div className="video-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/kWGAqE_qt8I"
+                    title="Introduction Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         )}
