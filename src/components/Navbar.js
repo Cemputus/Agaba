@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { ArrowRightOnRectangleIcon } from "@heroicons/react/24/outline";
 import './Navbar.css';
 
 const Navbar = ({ darkMode, toggleDarkMode, onLogout }) => {
@@ -20,14 +22,18 @@ const Navbar = ({ darkMode, toggleDarkMode, onLogout }) => {
           onClick={toggleDarkMode}
           aria-label="Toggle dark mode"
         >
-          {darkMode ? '🌞' : '🌙'}
+          {darkMode ? (
+            <SunIcon className="h-6 w-6" />
+          ) : (
+            <MoonIcon className="h-6 w-6" />
+          )}
         </button>
         <button 
           className="icon-button" 
           onClick={onLogout}
           aria-label="Logout"
         >
-          🚪
+          <ArrowRightOnRectangleIcon className="h-6 w-6" />
         </button>
       </div>
     </nav>
